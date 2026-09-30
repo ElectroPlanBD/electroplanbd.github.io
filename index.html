@@ -1,8 +1,154 @@
 <!DOCTYPE html>
-<html>
-<head><title>ElectroPlanBD</title></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ElectroPlanBD | Commercial and Residential Electrical Design & Load Calculation in Bangladesh</title>
+  <meta name="description" content="Commercial and Residential electrical design, load calculation and estimation in Bangladesh. AutoCAD wiring layouts for houses and buildings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-  <h1>ElectroPlanBD</h1>
-  <p>Residential Electrical Design & Load Calculation</p>
+
+<header class="nav" id="top">
+  <div class="wrap nav-row">
+    <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span>ElectroPlanBD</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Menu">Menu</button>
+    <nav class="links" id="navLinks">
+      <a href="index.html" class="active" data-i18n="nav.home">Home</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="projects.html" data-i18n="nav.projects">Projects</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact</a>
+      <a class="btn btn-amber" href="contact.html#quote" data-i18n="cta.quote">Get a Quote</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1 data-i18n="hero.title">Commercial / Residential electrical design and load calculation in Bangladesh</h1>
+        <p class="lead" data-i18n="hero.sub">AutoCAD wiring layouts, load calculations and cost estimates for houses and buildings, from first plan to handover.</p>
+        <div class="btn-row">
+          <a class="btn btn-amber" href="contact.html#quote" data-i18n="cta.quote">Get a Quote</a>
+          <a class="btn btn-ghost" href="projects.html" data-i18n="hero.projects">View Projects</a>
+        </div>
+      </div>
+      <!-- Wiring-plan drawing: the hero's one memorable element -->
+      <svg class="plan" viewBox="0 0 400 300" role="img" aria-label="Sample house electrical layout">
+        <g class="walls"><rect x="20" y="20" width="360" height="260"/><path d="M160 20V150M160 150H380M160 210V280M20 150H100"/></g>
+        <g class="wire"><path d="M60 60H160M160 60H250M250 60V110M250 110H330M90 110V230H120M250 110V230H330"/></g>
+        <g class="sym">
+          <circle cx="60" cy="60" r="7"/><circle cx="250" cy="60" r="7"/><circle cx="330" cy="110" r="7"/>
+          <circle cx="120" cy="230" r="7"/><circle cx="330" cy="230" r="7"/>
+          <rect x="84" y="104" width="12" height="12"/><rect x="154" y="54" width="12" height="12"/>
+        </g>
+        <text x="30" y="290" class="dim">DB · 4.5 kW</text>
+      </svg>
+    </div>
+  </section>
+
+  <section class="trust">
+    <div class="wrap trust-grid">
+      <div><strong>20+</strong><span data-i18n="trust.projects">Projects designed</span></div>
+      <div><strong>10</strong><span data-i18n="trust.years">Years of experience</span></div>
+      <div><strong>AutoCAD</strong><span data-i18n="trust.cad">Drawings ready to build</span></div>
+      <div><strong>BNBC</strong><span data-i18n="trust.code">Code-compliant design</span></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 data-i18n="services.title">What I do</h2>
+      <div class="grid3">
+        <article class="card">
+          <h3 data-i18n="services.design">Electrical design</h3>
+          <p data-i18n="services.design.p">Lighting, socket and circuit layouts drawn in AutoCAD for your floor plan.</p>
+          <a href="services.html#design" data-i18n="cta.more">Learn more</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.load">Load calculation</h3>
+          <p data-i18n="services.load.p">Total load, cable sizes and breaker ratings worked out for a safe supply.</p>
+          <a href="services.html#load" data-i18n="cta.more">Learn more</a>
+        </article>
+        <article class="card">
+          <h3 data-i18n="services.est">Estimation and costing</h3>
+          <p data-i18n="services.est.p">An itemized material list and cost estimate so you can budget before you build.</p>
+          <a href="services.html#estimation" data-i18n="cta.more">Learn more</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="wrap">
+      <h2 data-i18n="projects.title">Featured projects</h2>
+      <div class="grid3">
+        <article class="proj">
+          <div class="thumb" role="img" aria-label="Project image placeholder"></div>
+          <h3>Project name 1</h3>
+          <p>Residential building, Dhaka <span class="tag done" data-i18n="status.done">Completed</span></p>
+        </article>
+        <article class="proj">
+          <div class="thumb" role="img" aria-label="Project image placeholder"></div>
+          <h3>Project name 2</h3>
+          <p>Duplex house, location <span class="tag done" data-i18n="status.done">Completed</span></p>
+        </article>
+        <article class="proj">
+          <div class="thumb" role="img" aria-label="Project image placeholder"></div>
+          <h3>Project name 3</h3>
+          <p>Apartment building, location <span class="tag going" data-i18n="status.going">Ongoing</span></p>
+        </article>
+      </div>
+      <p class="more"><a href="projects.html" data-i18n="projects.all">See all projects</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2 data-i18n="steps.title">How it works</h2>
+      <ol class="steps">
+        <li><h3 data-i18n="steps.1">Share site details</h3><p data-i18n="steps.1p">Send your floor plan and your needs.</p></li>
+        <li><h3 data-i18n="steps.2">Load calculation</h3><p data-i18n="steps.2p">I work out loads, cables and breakers.</p></li>
+        <li><h3 data-i18n="steps.3">AutoCAD layout</h3><p data-i18n="steps.3p">You receive the full wiring drawings.</p></li>
+        <li><h3 data-i18n="steps.4">Estimation</h3><p data-i18n="steps.4p">You get the material list and cost.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="wrap banner-row">
+      <h2 data-i18n="banner.title">Planning a house? Get your electrical plan today.</h2>
+      <a class="btn btn-amber" href="contact.html#quote" data-i18n="cta.quote">Get a Quote</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div>
+      <strong>ElectroPlanBD</strong>
+      <p data-i18n="footer.about">Residential electrical design and load calculation in Bangladesh.</p>
+    </div>
+    <div>
+      <strong data-i18n="footer.links">Quick links</strong>
+      <p><a href="services.html" data-i18n="nav.services">Services</a><br><a href="projects.html" data-i18n="nav.projects">Projects</a><br><a href="about.html" data-i18n="nav.about">About</a><br><a href="contact.html" data-i18n="nav.contact">Contact</a></p>
+    </div>
+    <div>
+      <strong data-i18n="nav.contact">Contact</strong>
+      <p>Phone: +880 1XXX-XXXXXX<br>Email: info@example.com<br>Dhaka, Bangladesh</p>
+    </div>
+  </div>
+  <div class="wrap copy">© 2026 ElectroPlanBD. All rights reserved.</div>
+</footer>
+
+<a class="wa" href="https://wa.me/8801XXXXXXXXX" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
